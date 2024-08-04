@@ -17,7 +17,7 @@ connections = [("Alice", "Bob", 1), ("Alice", "Charlie", 2), ("Bob", "Diana", 1)
                ("Grace", "Henry", 2)]
 G.add_weighted_edges_from(connections)
 
-# Реалізація алгоритму Дейкстри (є в матеріалах з поясненнями)
+# Реалізація алгоритму Дейкстри
 def dijkstra(graph, start):
     shortest_paths = {vertex: float('infinity') for vertex in graph}
     shortest_paths[start] = 0
